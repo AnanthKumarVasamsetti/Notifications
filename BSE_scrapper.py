@@ -12,10 +12,7 @@ from protocols import clean_slate_protocol
 
 log.basicConfig(filename='example.log',level=log.DEBUG)
 
-def scrape(environ, resp):
-    print(environ)
-    print("===============================================")
-    print(resp)
+def scrape():
     now = datetime.now()
     time_at_10AM = now.replace(hour=10, minute=00, second=0)
     time_at_6PM = now.replace(hour=18, minute=00, second=0)
@@ -49,4 +46,5 @@ def scrape(environ, resp):
     close_db()
     bse_df.to_csv('BSE_data.csv')
 
-#scrape()
+if __name__ == '__main__':
+    scrape()
