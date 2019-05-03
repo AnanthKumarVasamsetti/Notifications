@@ -4,7 +4,7 @@ from BSE_scrapper import scrape
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def start_server():
     scrape()
 
 if __name__ == '__main__':
