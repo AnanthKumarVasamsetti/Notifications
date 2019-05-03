@@ -13,6 +13,7 @@ from protocols import clean_slate_protocol
 log.basicConfig(filename='example.log',level=log.DEBUG)
 
 def scrape():
+    print(os.environ['DATABASE_URL'])
     now = datetime.now()
     time_at_10AM = now.replace(hour=10, minute=00, second=0)
     time_at_6PM = now.replace(hour=18, minute=00, second=0)

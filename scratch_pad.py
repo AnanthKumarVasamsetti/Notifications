@@ -1,6 +1,7 @@
 import matplotlib.pyplot as plt
 import pandas as pd
 import psycopg2
+import os
 
 def plotter():
     data = pd.read_csv('BSE_data.csv')
