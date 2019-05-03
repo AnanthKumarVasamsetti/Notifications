@@ -10,6 +10,7 @@ def plotter():
 
 DATABASE_URI = 'postgres://bcsfswascxclov:93f19fe5cc89caddc6076b791f89d406acba6ce49230aa710c030bb4781481db@ec2-54-243-241-62.compute-1.amazonaws.com:5432/d32qpicp4tcgir'
 conn = psycopg2.connect(DATABASE_URI, sslmode='require')
+print('This is from scrapper file: ',os.environ['DATABASE_URL'])
 #conn.query('INSERT INTO bse_trade (time, price) values ("01:00:00", 1234.00)')
 
 def insert_into_db(data_time_price):

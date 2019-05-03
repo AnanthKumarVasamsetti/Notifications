@@ -12,8 +12,10 @@ from protocols import clean_slate_protocol
 
 log.basicConfig(filename='example.log',level=log.DEBUG)
 
-def scrape(arg1, arg2):
-    print('This is from scrapper file: ',os.environ['DATABASE_URL'])
+def scrape(environ, resp):
+    print(environ)
+    print("===============================================")
+    print(resp)
     now = datetime.now()
     time_at_10AM = now.replace(hour=10, minute=00, second=0)
     time_at_6PM = now.replace(hour=18, minute=00, second=0)
