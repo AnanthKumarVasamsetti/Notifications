@@ -17,7 +17,7 @@ def scrape():
     time_at_6PM = now.replace(hour=18, minute=00, second=0)
     bse_df = pd.DataFrame()
     counter = 0
-    sleep_time_inteval = 30
+    sleep_time_inteval = 2
     page_link = "https://www.moneycontrol.com/india/stockpricequote/computers-software/tataconsultancyservices/TCS"
     
     while(now < time_at_10AM):
@@ -43,6 +43,6 @@ def scrape():
 
     print("=========== Scarping finished ====================")
     close_db()
-    bse_df.to_csv('BSE_data.csv')
+    #bse_df.to_csv('BSE_data.csv')
 
-scrape()
+#scrape()
