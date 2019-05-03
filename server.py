@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def start_server():
-    print("Successfully deployed two processes")
+    return 'Congrats successfully deployed two processes'
 
 if __name__ == '__main__':
     app.run()
