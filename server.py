@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def start_server():
-    #scrape()
-    return 'Hello world'
+    scrape()
 
 if __name__ == '__main__':
     app.run()
