@@ -52,3 +52,7 @@ DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.moneycontrol
 DEBUG:urllib3.connectionpool:https://www.moneycontrol.com:443 "GET /india/stockpricequote/computers-software/tataconsultancyservices/TCS HTTP/1.1" 200 105146
 DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.moneycontrol.com:443
 DEBUG:urllib3.connectionpool:https://www.moneycontrol.com:443 "GET /india/stockpricequote/computers-software/tataconsultancyservices/TCS HTTP/1.1" 200 105146
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.moneycontrol.com:443
+DEBUG:urllib3.connectionpool:https://www.moneycontrol.com:443 "GET /india/stockpricequote/computers-software/tataconsultancyservices/TCS HTTP/1.1" 200 105168
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): www.moneycontrol.com:443
+DEBUG:urllib3.connectionpool:https://www.moneycontrol.com:443 "GET /india/stockpricequote/computers-software/tataconsultancyservices/TCS HTTP/1.1" 200 105168
