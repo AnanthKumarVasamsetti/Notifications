@@ -47,4 +47,4 @@ def scrape():
     close_db()
     bse_df.to_csv('BSE_data.csv')
 
-scrape()
+#scrape()
